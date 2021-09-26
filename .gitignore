@@ -1,0 +1,8 @@
+.asml/
+net/
+_site/
+node_modules/
+.terraform/
+.DS_Store
+*.backup
+*.lock.hcl

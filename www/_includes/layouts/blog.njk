@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Xlem's Blog</title>
+        <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+    </head>
+    <body>
+        <header>
+            <nav class="header">
+                <h1>xlem.wtf</h1>
+                <ul class="nav">
+                {%- for entry in collections.all | eleventyNavigation %}
+                    <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
+                        <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+                    </li>
+                {%- endfor %}
+                </ul>
+            </nav>
+        </header>
+        <main>
+            {{ content | safe }}
+        </main>
+    </body>
+</html>

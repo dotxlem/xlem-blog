@@ -1,0 +1,7 @@
+# Generated with assemblylift-cli 
+
+[project]
+name = "xlem"
+
+[services]
+web = { name = "web" }

@@ -1,0 +1,8 @@
+# Generated with assemblylift-cli 
+
+[service]
+name = "web"
+
+[api.functions.server]
+name = "server"
+http = { verb = "GET", path = "/{path+}" }

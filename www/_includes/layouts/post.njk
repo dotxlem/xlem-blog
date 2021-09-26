@@ -1,0 +1,6 @@
+---
+layout: layouts/blog.njk
+---
+<h1>{{ title }}</h1>
+<time class="post-time" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+{{ content | safe }}
