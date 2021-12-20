@@ -1,64 +1,82 @@
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('/fonts/IBMPlexSans-Regular.woff2') format('woff2');
+
+    font-style: normal;
+}
+
 html, body {
-    color: whitesmoke;
-    background-color: rgb(10, 10, 10);
-    font-family: Arial, Helvetica, sans-serif;
+    color: #f4f4f4;
+    background-color: #262626;
+    font-family: 'IBM Plex Sans', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
     padding: 0;
     margin: 0;
 }
 
 a {
-    color: #0396A6;
+    color: #78a9ff;
     text-decoration: none;
 }
 a:hover {
     text-decoration: underline;
 }
 
+h1 {
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+
 nav.header {
-    width: 100%;
     height: 64px;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    background-color: black;
-    color: #A6038B;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #f4f4f4;
+    color: #800080;
 
     display: flex;
     align-items: center;
 }
+nav.header a {
+    color: #0f62fe;
+    font-size: 1.25rem;
+}
 nav.header h1 {
     padding: 0;
     margin: 0;
-    font-size: 22pt;
+    font-size: 2.25rem;
 }
 nav.header li {
     display: inline;
-    padding-right: 1em;
+    padding-right: 32px;
 }
 
 main {
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 96px;
+    padding-right: 96px;
     padding-top: 64px;
+    margin: 0;
 }
 
 
 .post-list {
-    background-color: rgb(30, 30, 30);
+    background-color: #393939;
     padding: 16px;
-    font-size: 16pt;
+    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .list-item {
-    width: 90%;
-    padding: 8px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
     display: flex;
     justify-content: space-between;
 }
 
 time {
-    color: #BF045B;
+    color: #c6c6c6;
     font-weight: bold;
 }

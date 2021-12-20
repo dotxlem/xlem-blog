@@ -44,9 +44,10 @@ module.exports = function(eleventyConfig) {
     return Math.min.apply(null, numbers);
   });
 
-  // Copy the `img` and `css` folders to the output
+  // Copy the asset folders to the output
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("fonts");
 
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({

@@ -26,10 +26,10 @@ handler!(context: LambdaContext<ApiGatewayEvent>, async {
         Some(asset) => {
             let mut gzip = GzEncoder::new(Vec::new(), Compression::default());
             let mime = Some(
-                mime_guess::from_path(path.clone())
+                format!("{}; charset=utf-8", mime_guess::from_path(path.clone())
                     .first_or_octet_stream()
                     .as_ref()
-                    .to_string(),
+                    .to_string()),
             );
             let data = asset.data.as_ref();
             gzip.write_all(data).unwrap();
